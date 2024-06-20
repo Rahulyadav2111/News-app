@@ -8,7 +8,7 @@ const useNewsData = (category, searchTerm) => {
     async function fetchNewsData() {
       try {
         setLoading(true);
-        const apikey = "d2cba997b8e618ad2873564555b789fc";
+        const apikey = "f3e483999803c9a15948ecc2021e7bc9";
         const apiUrl = `https://gnews.io/api/v4/top-headlines?token=${apikey}`;
         const categoryParam = category ? `&topic=${category}` : "";
         const searchParam = searchTerm ? `&q=${searchTerm}` : "";
